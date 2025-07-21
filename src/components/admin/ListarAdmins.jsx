@@ -13,7 +13,7 @@ const ListarAdmins = () => {
 
   const obtenerAdmins = async () => {
     try {
-      const { data } = await axios.get("http://localhost:3900/api/admins", {
+      const { data } = await axios.get("https://catalogo-plomeria.onrender.com/api/admins", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

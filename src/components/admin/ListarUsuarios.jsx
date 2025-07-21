@@ -12,7 +12,7 @@ const ListarUsuarios = () => {
   const obtenerUsuarios = async () => {
     try {
       const token = localStorage.getItem("token");
-      const { data } = await axios.get("http://localhost:3900/api/usuarios", {
+      const { data } = await axios.get("https://catalogo-plomeria.onrender.com/api/usuarios", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
