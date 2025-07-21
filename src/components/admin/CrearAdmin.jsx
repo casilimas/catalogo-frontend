@@ -49,7 +49,7 @@ const CrearAdmin = () => {
     }
 
     try {
-      const { data } = await axios.post("http://localhost:3900/api/admin/registro", form);
+      const { data } = await axios.post("https://catalogo-plomeria.onrender.com/api/admin/registro", form);
       setMensaje(`✅ Admin registrado como: ${data.admin.nombre}`);
       setForm({ nombre: "", email: "", password: "", telefono: "" });
       setPais("");

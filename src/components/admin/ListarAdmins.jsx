@@ -30,7 +30,7 @@ const ListarAdmins = () => {
 
   const eliminarAdmin = async (id) => {
     try {
-      await axios.delete(`http://localhost:3900/api/admin/${id}`, {
+      await axios.delete(`https://catalogo-plomeria.onrender.com/api/admin/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

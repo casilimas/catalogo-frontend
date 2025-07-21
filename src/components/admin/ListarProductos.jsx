@@ -11,7 +11,7 @@ const ListarProductos = () => {
 
   const obtenerProductos = async () => {
     try {
-      const { data } = await axios.get("http://localhost:3900/api/productos");
+      const { data } = await axios.get("https://catalogo-plomeria.onrender.com/api/productos");
       setProductos(data);
     } catch (err) {
       setError("Error al obtener productos");

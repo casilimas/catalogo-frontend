@@ -36,7 +36,7 @@ const ListarUsuarios = () => {
 
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`http://localhost:3900/api/usuario/${id}`, {
+      await axios.delete(`https://catalogo-plomeria.onrender.com/api/usuario/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

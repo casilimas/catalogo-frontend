@@ -50,7 +50,7 @@ const FormularioEditarProducto = ({
 
       const token = localStorage.getItem("token");
 
-      await axios.put(`http://localhost:3900/api/productos/${producto._id}`, formData, {
+      await axios.put(`https://catalogo-plomeria.onrender.com/api/productos/${producto._id}`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",
